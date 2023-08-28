@@ -1,12 +1,46 @@
-@use 'background';
+@use "background";
 
-.header{
-    
-        h1{
-           font-family: background.$logo-font;
-           letter-spacing: 0.082;
-           font-weight: 700;
-           margin-left: 20px;
-        }
-    
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  h1 {
+    font-family: background.$logo-font;
+    letter-spacing: 0.082;
+    font-weight: 700;
+    margin-left: 20px;
+  }
+}
+
+.addTask {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  div {
+    input {
+      width: 622px;
+      height: 55px;
+      background: rgba(255, 251, 251, 0.71);
+      border: none;
+      font-size: 1.1em;
+    }
+
+    ::placeholder{
+          font-size: 1.2em;  
+    }
+
+    button{
+        cursor: pointer;
+        border-radius: 20px;
+        background: #000; 
+        width: 100px;
+        height: 50px;
+        color: white;
+        font-size: 1.2em;
+        letter-spacing: .008em;
+        border: none;
+        border-radius: 10px;
+        margin-left: 20px;
+    }
+  }
 }

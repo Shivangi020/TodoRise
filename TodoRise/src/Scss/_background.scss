@@ -19,4 +19,8 @@ main{
     background-attachment: fixed;
     background-blend-mode: multiply;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
