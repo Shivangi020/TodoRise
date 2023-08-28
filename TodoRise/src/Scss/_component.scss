@@ -1,0 +1,12 @@
+@use 'background';
+
+.header{
+    
+        h1{
+           font-family: background.$logo-font;
+           letter-spacing: 0.082;
+           font-weight: 700;
+           margin-left: 20px;
+        }
+    
+}
