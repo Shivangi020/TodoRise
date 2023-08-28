@@ -9,6 +9,7 @@
     letter-spacing: 0.082;
     font-weight: 700;
     margin-left: 20px;
+    color: #333;
   }
 }
 
@@ -18,6 +19,9 @@
     justify-content: center;
     margin-top: 20px;
   div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     input {
       width: 622px;
       height: 55px;
@@ -54,7 +58,9 @@
     padding: 20px;
     gap: 30px;
     justify-content: center;
+    flex-wrap: wrap;
     .todolist{
+        min-width: 309px;
         width: 30%;
         height: 500px;
         background-color: rgba(255, 251, 251, 0.71);
@@ -63,6 +69,46 @@
             font-family: background.$logo-font;
             margin-left: 12px;
             font-size: 22px;
+        }
+    }
+}
+
+.Footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 45px;
+    div{
+
+        a{
+            font-size: 2.5em;
+            margin: 0px 10px;
+            color: #333;
+        }
+
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .addTask{
+        div{
+            input{
+                width: 450px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 412px) {
+
+    .addTask{
+        div{
+            input{
+                width: 350px;
+            }
         }
     }
 }
