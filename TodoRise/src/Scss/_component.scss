@@ -1,7 +1,7 @@
 @use "background";
 
 .header {
-    position: fixed;
+    position: relative;
     top: 0;
     width: 100%;
   h1 {
@@ -16,6 +16,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 20px;
   div {
     input {
       width: 622px;
@@ -43,4 +44,25 @@
         margin-left: 20px;
     }
   }
+}
+
+
+.Lists{
+    width: 100%;
+    display: flex;
+    margin-top: 40px;
+    padding: 20px;
+    gap: 30px;
+    justify-content: center;
+    .todolist{
+        width: 30%;
+        height: 500px;
+        background-color: rgba(255, 251, 251, 0.71);
+
+        h1{
+            font-family: background.$logo-font;
+            margin-left: 12px;
+            font-size: 22px;
+        }
+    }
 }
